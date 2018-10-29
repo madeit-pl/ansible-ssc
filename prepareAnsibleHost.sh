@@ -9,3 +9,15 @@ sudo pip install --upgrade virtualenv
 #sudo apt-get -y install krb5-user
 #sudo pip install kerberos
 sudo pip install ansible
+sudo apt-get -y install docker.io
+sudo pip install docker-py
+mkdir awx-install
+cd awx-install
+git clone https://github.com/ansible/awx.git
+git clone https://github.com/ansible/awx-logos.git
+cd awx / installer /
+#modify installer file for alternative DNS
+
+sudo cp -r ~/.local/lib/python2.7/site-packages/backports/ssl_match_hostname/ /usr/lib/python2.7/dist-packages/backports
+
+ansible-playbook -i inventory install.yml
