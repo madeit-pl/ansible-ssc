@@ -23,4 +23,4 @@ cd installer
 sudo cp -r /usr/local/lib/python2.7/dist-packages/backports/ssl_match_hostname/ /usr/lib/python2.7/dist-packages/backports
 
 
-ansible-playbook -i inventory install.yml
+#ansible-playbook -i inventory install.yml
