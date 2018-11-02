@@ -1,6 +1,0 @@
-docker exec -i -t awx_task bash  -c 'yum -y install krb5-workstation'
-docker exec -i -t awx_task bash  -c 'yum -y install krb5-devel'
-docker exec -i -t awx_task bash  -c 'yum install krb5-libs'
-docker exec -i -t awx_task bash  -c 'yum install gcc'
-docker exec -i -t awx_task bash  -c 'yum install python-devel'
-docker exec -i -t awx_task bash  -c 'pip install kerberos'
