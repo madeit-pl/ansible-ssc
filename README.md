@@ -9,5 +9,5 @@
 	curl -L https://raw.githubusercontent.com/madeit-pl/ansible-ssc/master/03_nginxSetup.sh | bash<br/>
 
 <h3>ToDo</h3>
-	1. DNS server updates
-	2. Production tests of winrm and kerberos
+	1. DNS server updates </br>
+	2. Production tests of winrm and kerberos </br>
