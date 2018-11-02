@@ -20,7 +20,7 @@ cd installer
 #modify installer file for alternative DNS
 
 sed -i 's/host_port=80/host_port=127.0.0.1:8000/g' inventory
-#sed -i 's/#awx_alternate_dns_servers="10.1.2.3,10.2.3.4"/awx_alternate_dns_servers="172.25.192.22,172.24.69.45"/g' inventory
+sed -i 's/#awx_alternate_dns_servers="10.1.2.3,10.2.3.4"/awx_alternate_dns_servers="172.25.192.22,172.24.69.45"/g' inventory
 
 sudo cp -r /usr/local/lib/python2.7/dist-packages/backports/ssl_match_hostname/ /usr/lib/python2.7/dist-packages/backports
 
