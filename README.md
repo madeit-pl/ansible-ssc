@@ -7,3 +7,7 @@
 	curl -L https://raw.githubusercontent.com/madeit-pl/ansible-ssc/master/01_prepareAnsibleHost.sh | bash<br/>
 	curl -L https://raw.githubusercontent.com/madeit-pl/ansible-ssc/master/02_kerberosConfiguration.sh | bash<br/>
 	curl -L https://raw.githubusercontent.com/madeit-pl/ansible-ssc/master/03_nginxSetup.sh | bash<br/>
+
+<h3>ToDo</h3>
+	1. DNS server updates
+	2. Production tests of winrm and kerberos
