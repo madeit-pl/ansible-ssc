@@ -5,5 +5,5 @@ openssl req -subj '/CN=wasawx01.einstein.local' -x509 -newkey rsa:4096 -nodes -k
 
 wget https://raw.githubusercontent.com/madeit-pl/ansible-ssc/master/nginxReverseProxy.conf
 
-docker pull nginx
-docker run --name nginx_proxy -d -v `pwd`:/etc/nginx/conf.d -p 443:443  --link awx_web:awx_web nginx
+sudo docker pull nginx
+sudo docker run --name nginx_proxy -d -v `pwd`:/etc/nginx/conf.d -p 443:443  --link awx_web:awx_web nginx
